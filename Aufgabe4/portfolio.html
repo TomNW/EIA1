@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/044eb439e0.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -13,7 +14,7 @@
 
     background-image: url("fotos/S4300275.JPG");
     height: 400px;
-    background-attachment: fixed box-shadow: 10px 10px;
+    background-attachment: scroll; 
     margin-bottom: 100px;
   }
 
@@ -21,6 +22,17 @@
 
     width: 800px;
     margin: auto;
+  }
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+  li {
+    float: right;
+    display: inline;
   }
 
   img {
@@ -37,6 +49,25 @@
     margin: auto;
     text-shadow: 2px 2px 4px #000000;
   }
+
+  a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+
+
 </style>
 
 
@@ -47,13 +78,17 @@
 
   <div class="banner">
     <div class="banner_inhalt">
-      <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+      <i class="fa-sharp fa-solid fa-cubes" style="font-size:60px;color:whitesmoke;"></i>
+    
+      <li><a href="https://www.w3schools.com/">Portfolio</a></li>
+      <li><a href="https://www.w3schools.com/">Über mich</a></li>      
+      <li><a href="https://www.w3schools.com/">Kontakt</a></li>
+    
     </div>
   </div>
 
 
-  <img src="fotos/S4300400.JPG" alt="HAUS">
-
+  <a href="fotos/S4300400.JPG"><img src="fotos/S4300400.JPG" alt="HAUS" height="100px"></a>
 
 
 
