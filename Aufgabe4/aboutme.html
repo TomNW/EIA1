@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://kit.fontawesome.com/044eb439e0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.cdnfonts.com/css/old-english-five" rel="stylesheet">
+
 </head>
 
 <style>
@@ -14,75 +16,110 @@
 
     background-image: url("fotos/S4300275.JPG");
     height: 400px;
-    background-attachment: scroll; 
-    
+    background-attachment: fixed;
+    margin-bottom: 150px;
+    width: 100%;
   }
 
-  .banner_inhalt{
+  .banner_inhalt {
 
     width: 800px;
     margin: auto;
   }
 
   ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-  li {
+  li.a {
     float: right;
     display: inline;
     padding: 40px 40px;
   }
 
   img {
-  
-    display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  width: 800px;
-  filter:grayscale(100%)
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 800px;
+    filter: grayscale(100%)
   }
-  
+
+
   p {
     width: 800px;
     margin: auto;
-    text-shadow: 2px 2px 4px #000000;
+    
   }
 
   a:link {
-  text-decoration: none;
+    text-decoration: none;
     color: grey;
-  
-}
 
-a:visited {
-  text-decoration: none;
-  color: grey;
-}
+  }
 
-a:hover {
-  text-decoration: underline;
-  color: white;
-  font-size: 150%;
-}
+  a:visited {
+    text-decoration: none;
+    color: grey;
+  }
 
-a:active {
-  color: gold;
-}
+  a:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: 150%;
+    font-family: 'Old English Five', sans-serif;
+  }
 
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: gray;
-   color: white;
-   text-align: center;
-}
+  a:active {
+    color: gold;
+  }
+
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    min-height: calc(100vh - 600px);
+  }
+
+  p.m {
+    font-family: Cooper, Schwarz;
+    font-size: 100px;
+    text-shadow: 5px 5px 2px gray;
+
+  }
+  h1 {
+    font-family: 'Old English Five', sans-serif;
+
+    text-shadow: 2px 2px 5px gray;
+  }
+
+  .footer {
+    height: 200px;
+    background-color: #eaeaea;
+    margin-top: 200px;
+  }
+
+  .footer_inhalt {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+
+  li.b {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+  }
+  p.a {text-align: left;}
+  p.b {text-align: right;}
 </style>
 
 
@@ -93,23 +130,39 @@ a:active {
 
   <div class="banner">
     <div class="banner_inhalt">
-     <a href="portfolio.html"> <i class="fa-sharp fa-solid fa-cubes" style="font-size:100px;color:whitesmoke;"></i></a>
-    
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="aboutme.html">Über mich</a></li>      
-      <li><a href="kontakt.html">Kontakt</a></li>
-    
+      <a href="portfolio.html"> <i class="fa-sharp fa-solid fa-cubes" style="font-size:100px;color:whitesmoke;"></i></a>
+
+      <li class="a"><a href="portfolio.html">Portfolio</a></li>
+      <li class="a"><a href="aboutme.html">Über mich</a></li>
+      <li class="a"><a href="kontakt.html">Kontakt</a></li>
+
     </div>
   </div>
 
+  <main>
 
-  <a href="fotos/S4300400.JPG"><img src="fotos/S4300400.JPG" alt="HAUS" height="100px"></a>
-  <a href="fotos/S4300363.JPG"><img src="fotos/S4300363.JPG" alt="HAUS" height="100px"></a>
-  <a href="fotos/S4300397.JPG"><img src="fotos/S4300397.JPG" alt="HAUS" height="100px"></a>
-  <a href="fotos/S4300246.JPG"><img src="fotos/S4300246.JPG" alt="HAUS" height="100px"></a>
-  <a href="fotos/S4300289.JPG"><img src="fotos/S4300289.JPG" alt="HAUS" height="100px"></a>
+    <p class="m">Ich bin Tom.<br/> Ich hab diese Webseite erstellt und ich freu mich <br/> wenn sie dir gefallen hat. </p>
+    
 
 
+  </main>
+
+
+
+  <div class="footer">
+    <div class="footer_inhalt">
+      <p class="a"> Kontaktdaten <br/> und sonst </p>
+      <p class="b"> Copyright alles meins</p>
+      <u1 class="socials">
+        <li class="b"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="font-size: 30px;"></i></a></li>
+        <li class="b"><a href="https:instagram"><i class="fa-brands fa-youtube" style="font-size: 30px;"></i></a></li>
+        <li class="b"><a href="https:instagram"><i class="fa-brands fa-linkedin" style="font-size: 30px;"></i></a></li>
+      </u1>
+
+    </div>
+
+
+  </div>
 
 
 
