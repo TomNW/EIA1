@@ -12,116 +12,165 @@
 </head>
 
 <style>
-  .banner {
+    .bewegt {
 
-    background-image: url("fotos/S4300275.JPG");
-    height: 400px;
-    background-attachment: fixed;
-    margin-bottom: 150px;
-    width: 100%;
-  }
-
-  .banner_inhalt {
-
-    width: 800px;
-    margin: auto;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li.a {
-    float: right;
-    display: inline;
-    padding: 40px 40px;
-  }
-
-  img {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    width: 800px;
-    filter: grayscale(100%)
-  }
-
-
-  p {
-    width: 800px;
-    margin: auto;
-    text-shadow: 2px 2px 4px #000000;
-  }
-
-  a:link {
-    text-decoration: none;
-    color: grey;
-
-  }
-
-  a:visited {
-    text-decoration: none;
-    color: grey;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: white;
-    font-size: 150%;
-    font-family: 'Old English Five', sans-serif;
-  }
-
-  a:active {
-    color: gold;
-  }
-
-
-  main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    min-height: calc(100vh - 600px);
-  }
-  
-  input {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-  width: 50%;
-  
+animation-name: smoke;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 }
-  p.m {
-    font-family: 'Old English Five', sans-serif;
 
-    text-shadow: 2px 2px 5px gray;
-  }
+@keyframes smoke {
+from {
+  background-image: url("fotos/S4300275.JPG");
+  background-position: right;
+  height: 400px;
+  background-attachment: fixed;
+  margin-bottom: 150px;
+  width: 100%;
+}
 
-  .footer {
-    height: 200px;
-    background-color: #eaeaea;
-    margin-top: 200px;
-  }
+to {
+  background-image: url("fotos/S4300396.JPG");
 
-  .footer_inhalt {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-  }
+  background-position: left;
 
-  li.b {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: auto;
-  }
-  p.a {text-align: left;}
-  p.b {text-align: right;}
+  height: 400px;
+  background-attachment: fixed;
+  margin-bottom: 150px;
+  width: 100%;
+}
+}
+
+
+
+
+
+.banner_inhalt {
+
+width: 800px;
+margin: auto;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li.a {
+float: right;
+display: inline;
+padding: 40px 40px;
+}
+
+
+
+
+img {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 4px;
+margin-bottom: 4px;
+width: 800px;
+filter: grayscale(100%)
+}
+
+img:hover {
+
+display: block;
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 0px;
+margin-bottom: 0px;
+
+filter: grayscale(0%)
+
+
+}
+
+
+p {
+width: 800px;
+margin: auto;
+text-shadow: 2px 2px 4px #000000;
+}
+
+a:link {
+text-decoration: none;
+color: grey;
+
+}
+
+a:visited {
+text-decoration: underline;
+color: grey;
+
+}
+
+a:hover {
+text-decoration: underline;
+color: white;
+font-size: 150%;
+font-family: 'Old English Five', sans-serif;
+}
+
+a:active {
+text-decoration: underline;
+color: gold;
+}
+
+
+main {
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+min-height: calc(100vh - 600px);
+}
+
+h1 {
+font-family: 'Old English Five', sans-serif;
+
+text-shadow: 2px 2px 5px gray;
+}
+
+.boden {
+
+display: flex;
+flex-flow: row;
+
+}
+
+.footer {
+
+height: 200px;
+background-color: #eaeaea;
+margin-top: 200px;
+}
+
+.footer_inhalt {
+
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+li.b {
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: auto;
+}
+
+p.a {
+text-align: left;
+}
+
+p.b {
+text-align: right;
+}
 </style>
 
 
@@ -131,13 +180,14 @@
 <body>
 
   <div class="banner">
+    <div class="bewegt">
     <div class="banner_inhalt">
       <a href="portfolio.html"> <i class="fa-sharp fa-solid fa-cubes" style="font-size:100px;color:whitesmoke;"></i></a>
 
       <li class="a"><a href="portfolio.html">Portfolio</a></li>
       <li class="a"><a href="aboutme.html">Über mich</a></li>
       <li class="a"><a href="kontakt.html">Kontakt</a></li>
-
+    </div>
     </div>
   </div>
 
