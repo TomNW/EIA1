@@ -6,4 +6,7 @@
  
  
  
- console.log("Hallo Frankfurt!");
+ console.log("Deutschlands Einwohnerzahl lag 2017 bei " + einwd + ".");
+ console.log("Frankreichs Einwohnerzahl lag 2017 bei " + einwf + ".");
+ console.log("Italiens Einwohnerzahl lag 2017 bei " + einwi + ".");
+ console.log("Polens Einwohnerzahl lag 2017 bei " + einwp + ".");
