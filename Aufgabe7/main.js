@@ -29,6 +29,7 @@ function ger() {
     document.getElementById("text3").innerHTML = "" + prozentd + "";
     document.getElementById("text4").innerHTML = "" + wachstd + "";
     document.getElementById("text5").innerHTML = "" + awachstd + "";
+    document.getElementById("balken").style.height = "16%";
 }
 function fra() {
     document.getElementById("header").innerHTML = "Einwohnerzahl Frankreich";
@@ -37,6 +38,7 @@ function fra() {
     document.getElementById("text3").innerHTML = "" + prozentf + "";
     document.getElementById("text4").innerHTML = "" + wachstf + "";
     document.getElementById("text5").innerHTML = "" + awachstf + "";
+    document.getElementById("balken").style.height = "13%";
 }
 function ita() {
     document.getElementById("header").innerHTML = "Einwohnerzahl Italien";
@@ -45,6 +47,7 @@ function ita() {
     document.getElementById("text3").innerHTML = "" + prozenti + "";
     document.getElementById("text4").innerHTML = "" + wachsti + "";
     document.getElementById("text5").innerHTML = "" + awachsti + "";
+    document.getElementById("balken").style.height = "11%";
 }
 function pol() {
     document.getElementById("header").innerHTML = "Einwohnerzahl Polen";
@@ -53,6 +56,7 @@ function pol() {
     document.getElementById("text3").innerHTML = "" + prozentp + "";
     document.getElementById("text4").innerHTML = "" + wachstp + "";
     document.getElementById("text5").innerHTML = "" + awachstp + "";
+    document.getElementById("balken").style.height = "7%";
 }
 function eur() {
     document.getElementById("header").innerHTML = "Einwohnerzahl in der europäischen Union";
@@ -61,5 +65,6 @@ function eur() {
     document.getElementById("text3").innerHTML = "" + prozenteu + "";
     document.getElementById("text4").innerHTML = "" + wachsteu + "";
     document.getElementById("text5").innerHTML = "" + awachsteu + "";
+    document.getElementById("balken").style.height = "100%";
 }
 //# sourceMappingURL=main.js.map
