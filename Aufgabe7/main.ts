@@ -1,21 +1,23 @@
- const einwd = "82,5 Mio"
- const einwf = "67,0 Mio"
- const einwi = "60,6 Mio"
- const einwp = "38,0 Mio"
- const einweu = "511,5 Mio"
- const prozentd = "16,12%"
- const prozentf = "13,09%"
- const prozenti = "11,84%"
- const prozentp = "7,42%"
+const einwd = "82,5 Mio"
+const einwf = "67,0 Mio"
+const einwi = "60,6 Mio"
+const einwp = "38,0 Mio"
+const einweu = "511,5 Mio"
+const prozentd = "16,12%"
+const prozentf = "13,09%"
+const prozenti = "11,84%"
+const prozentp = "7,42%"
+const prozenteu = "100%"
 const wachstd = "0,2%"
 const wachstf = "11,0%"
 const wachsti = "-2,7%"
 const wachstp = "-9,5%"
+const wachsteu = "3,3%"
 const awachstd = "0,2 Mio"
 const awachstf = "7,4 Mio"
 const awachsti = "-1,6 Mio"
 const awachstp = "-3,6 Mio"
-
+const awachsteu = "17,1 Mio"
 
 
  console.log("Deutschlands Einwohnerzahl lag 2017 bei " + einwd + ".");
@@ -68,8 +70,9 @@ function eur(){
 
     document.getElementById("header").innerHTML = "Einwohnerzahl in der europäischen Union"
     document.getElementById("text1").innerHTML = ""+einweu+"";
-    document.getElementById("text2").innerHTML = "Deutschlands Einwohnerzahl lag 2017 bei " + einwd + "."
-    document.getElementById("text3").innerHTML = ""+prozentd+"";
-    document.getElementById("text4").innerHTML = ""+wachstd+"";
-    document.getElementById("text5").innerHTML = ""+awachstd+""
+    document.getElementById("text2").innerHTML = "Die Einwohnerzahl der EU lag 2017 bei " + einweu + "."
+    document.getElementById("text3").innerHTML = ""+prozenteu+"";
+    document.getElementById("text4").innerHTML = ""+wachsteu+"";
+    document.getElementById("text5").innerHTML = ""+awachsteu+""
+
 }
