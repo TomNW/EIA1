@@ -3,11 +3,11 @@ const einwf = 67.0;
 const einwi = 60.6;
 const einwp = 38.0;
 const einweu = 511.5;
-const prozentd = "16,12%";
-const prozentf = "13,09%";
-const prozenti = "11,84%";
-const prozentp = "7,42%";
-const prozenteu = "100%";
+const prozentde = einwd / einweu * 100;
+const prozentfr = einwf / einweu * 100;
+const prozentit = einwi / einweu * 100;
+const prozentpl = einwp / einweu * 100;
+const prozenteur = einweu / einweu * 100;
 const wachstd = "0,2%";
 const wachstf = "11,0%";
 const wachsti = "-2,7%";
@@ -18,12 +18,14 @@ const awachstf = "7,4 Mio";
 const awachsti = "-1,6 Mio";
 const awachstp = "-3,6 Mio";
 const awachsteu = "17,1 Mio";
-const prozentde = einwd / einweu * 100;
-const prozentfr = einwf / einweu * 100;
-const prozentit = einwi / einweu * 100;
-const prozentpl = einwp / einweu * 100;
-const prozenteur = einweu / einweu * 100;
-console.log(prozentde);
+function myFunc(evt) {
+    document.getElementById("text1").innerHTML = (evt.currentTarget.parameter) + " Mio";
+    document.getElementById("text3").innerHTML = (evt.currentTarget.parameter2) + "%";
+    document.getElementById("text4").innerHTML = (evt.currentTarget.parameter4);
+    document.getElementById("text5").innerHTML = (evt.currentTarget.parameter5);
+    document.getElementById("header").innerHTML = "Einwohnerzahl" + (evt.currentTarget.parameter1);
+    document.getElementById("balken").style.height = (evt.currentTarget.parameter2) + "%";
+}
 const germany = document.getElementById("ger");
 const france = document.getElementById("fra");
 const italia = document.getElementById("ita");
@@ -64,12 +66,4 @@ europa.parameter2 = prozenteur.toFixed(2);
 europa.parameter3 = prozenteur.toFixed(2);
 europa.parameter4 = wachsteu;
 europa.parameter5 = awachsteu;
-function myFunc(evt) {
-    document.getElementById("text1").innerHTML = (evt.currentTarget.parameter) + " Mio";
-    document.getElementById("text3").innerHTML = (evt.currentTarget.parameter2) + "%";
-    document.getElementById("text4").innerHTML = (evt.currentTarget.parameter4);
-    document.getElementById("text5").innerHTML = (evt.currentTarget.parameter5);
-    document.getElementById("header").innerHTML = "Einwohnerzahl" + (evt.currentTarget.parameter1);
-    document.getElementById("balken").style.height = (evt.currentTarget.parameter3);
-}
 //# sourceMappingURL=main.js.map
