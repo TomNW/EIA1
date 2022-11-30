@@ -18,53 +18,53 @@ const awachstf = "7,4 Mio";
 const awachsti = "-1,6 Mio";
 const awachstp = "-3,6 Mio";
 const awachsteu = "17,1 Mio";
-console.log("Deutschlands Einwohnerzahl lag 2017 bei " + einwd + ".");
-console.log("Frankreichs Einwohnerzahl lag 2017 bei " + einwf + ".");
-console.log("Italiens Einwohnerzahl lag 2017 bei " + einwi + ".");
-console.log("Polens Einwohnerzahl lag 2017 bei " + einwp + ".");
-function ger() {
-    document.getElementById("header").innerHTML = "Einwohnerzahl Deutschland";
-    document.getElementById("text1").innerHTML = "" + einwd + "";
-    document.getElementById("text2").innerHTML = "Deutschlands Einwohnerzahl lag 2017 bei " + einwd + ".";
-    document.getElementById("text3").innerHTML = "" + prozentd + "";
-    document.getElementById("text4").innerHTML = "" + wachstd + "";
-    document.getElementById("text5").innerHTML = "" + awachstd + "";
-    document.getElementById("balken").style.height = "16%";
-}
-function fra() {
-    document.getElementById("header").innerHTML = "Einwohnerzahl Frankreich";
-    document.getElementById("text1").innerHTML = "" + einwf + "";
-    document.getElementById("text2").innerHTML = "Frankreich Einwohnerzahl lag 2017 bei " + einwf + ".";
-    document.getElementById("text3").innerHTML = "" + prozentf + "";
-    document.getElementById("text4").innerHTML = "" + wachstf + "";
-    document.getElementById("text5").innerHTML = "" + awachstf + "";
-    document.getElementById("balken").style.height = "13%";
-}
-function ita() {
-    document.getElementById("header").innerHTML = "Einwohnerzahl Italien";
-    document.getElementById("text1").innerHTML = "" + einwi + "";
-    document.getElementById("text2").innerHTML = "Italiens Einwohnerzahl lag 2017 bei " + einwi + ".";
-    document.getElementById("text3").innerHTML = "" + prozenti + "";
-    document.getElementById("text4").innerHTML = "" + wachsti + "";
-    document.getElementById("text5").innerHTML = "" + awachsti + "";
-    document.getElementById("balken").style.height = "11%";
-}
-function pol() {
-    document.getElementById("header").innerHTML = "Einwohnerzahl Polen";
-    document.getElementById("text1").innerHTML = "" + einwp + "";
-    document.getElementById("text2").innerHTML = "Polens Einwohnerzahl lag 2017 bei " + einwp + ".";
-    document.getElementById("text3").innerHTML = "" + prozentp + "";
-    document.getElementById("text4").innerHTML = "" + wachstp + "";
-    document.getElementById("text5").innerHTML = "" + awachstp + "";
-    document.getElementById("balken").style.height = "7%";
-}
-function eur() {
-    document.getElementById("header").innerHTML = "Einwohnerzahl in der europäischen Union";
-    document.getElementById("text1").innerHTML = "" + einweu + "";
-    document.getElementById("text2").innerHTML = "Die Einwohnerzahl der EU lag 2017 bei " + einweu + ".";
-    document.getElementById("text3").innerHTML = "" + prozenteu + "";
-    document.getElementById("text4").innerHTML = "" + wachsteu + "";
-    document.getElementById("text5").innerHTML = "" + awachsteu + "";
-    document.getElementById("balken").style.height = "100%";
+const germany = document.getElementById("ger");
+const france = document.getElementById("fra");
+const italia = document.getElementById("ita");
+const poland = document.getElementById("pol");
+const europa = document.getElementById("eur");
+germany.addEventListener('click', myFunc, false);
+germany.parameter = einwd;
+germany.parameter1 = " Deutschland";
+germany.parameter2 = prozentd;
+germany.parameter3 = prozentd;
+germany.parameter4 = wachstd;
+germany.parameter5 = awachstd;
+germany.parameter6 = prozentd;
+france.addEventListener('click', myFunc, false);
+france.parameter = einwf;
+france.parameter1 = " Frankreich";
+france.parameter2 = prozentf;
+france.parameter3 = prozentf;
+france.parameter4 = wachstf;
+france.parameter5 = awachstf;
+italia.addEventListener('click', myFunc, false);
+italia.parameter = einwi;
+italia.parameter1 = " Italien";
+italia.parameter2 = prozenti;
+italia.parameter3 = prozenti;
+italia.parameter4 = wachsti;
+italia.parameter5 = awachsti;
+poland.addEventListener('click', myFunc, false);
+poland.parameter = einwp;
+poland.parameter1 = " Polen";
+poland.parameter2 = prozentp;
+poland.parameter3 = prozentp;
+poland.parameter4 = wachstp;
+poland.parameter5 = awachstp;
+europa.addEventListener('click', myFunc, false);
+europa.parameter = einwp;
+europa.parameter1 = " in der europäischen Union";
+europa.parameter2 = prozentp;
+europa.parameter3 = prozentp;
+europa.parameter4 = wachsteu;
+europa.parameter5 = awachsteu;
+function myFunc(evt) {
+    document.getElementById("text1").innerHTML = (evt.currentTarget.parameter);
+    document.getElementById("text3").innerHTML = (evt.currentTarget.parameter2);
+    document.getElementById("text4").innerHTML = (evt.currentTarget.parameter4);
+    document.getElementById("text5").innerHTML = (evt.currentTarget.parameter5);
+    document.getElementById("header").innerHTML = "Einwohnerzahl" + (evt.currentTarget.parameter1);
+    document.getElementById("balken").style.height = (evt.currentTarget.parameter6);
 }
 //# sourceMappingURL=main.js.map

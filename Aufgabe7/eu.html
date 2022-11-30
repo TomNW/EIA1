@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Einwohnerzahlen der EU 2017-2050</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="main.js"></script>
+    
 </head>
 
 <body>
     <nav>
         <div class="row">
             <div class="wrapper">
-                <img src="images/germany.png" height="76px" class="germany" onclick="ger()">
+                <img src="images/germany.png" height="76px" class="germany" id="ger">   <!--Deutschland-->
                 <h5>Deutschland</h5>
             </div>
             <div class="wrapper">
@@ -56,7 +56,7 @@
                 <h5>Finnland</h5>
             </div>
             <div class="wrapper active">
-                <img src="images/france.png" height="76px" class="france" onclick="fra()">
+                <img src="images/france.png" height="76px" class="france" id="fra"> <!--Frankreich-->
                 <h5>Frankreich</h5>
             </div>
             <div class="wrapper">
@@ -72,7 +72,7 @@
                 <h5>Irland</h5>
             </div>
             <div class="wrapper">
-                <img src="images/italy.png" height="76px" class="italy" onclick="ita()">
+                <img src="images/italy.png" height="76px" class="italy" id="ita">   <!--Italien-->
                 <h5>Italien</h5>
             </div>
             <div class="wrapper">
@@ -98,7 +98,7 @@
                 <h5>Niederlande</h5>
             </div>
             <div class="wrapper">
-                <img src="images/poland.png" height="76px" class="poland" onclick="pol()">
+                <img src="images/poland.png" height="76px" class="poland" id="pol"> <!--Polen-->
                 <h5>Polen</h5>
             </div>
             <div class="wrapper">
@@ -128,7 +128,7 @@
         </div>
     </nav>
     <div class="chartStarWrapper">
-        <img src="images/eu_stars.png" class="stars" onclick="eur()">
+        <img src="images/eu_stars.png" class="stars" id="eur">  <!--Europa-->
        
         <div class="chartWrapper">
             <div class="chart" id="balken"></div>
@@ -166,7 +166,7 @@
     <footer>
         <p>Quelle: https://www.bpb.de/kurz-knapp/zahlen-und-fakten/europa/70497/bevoelkerungsstand-und-entwicklung/#:~:text=529%20Millionen%20zunehmen.-,Fakten,46%2C5%20Mio.).</p>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
