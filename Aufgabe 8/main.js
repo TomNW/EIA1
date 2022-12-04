@@ -1,20 +1,21 @@
 var Samples = [
-    ("Aufgabe8/samples/DrumPad/A.mp3"),
-    ("./samples/C.mp3"),
-    ("./samples/F.mp3"),
-    ("./samples/G.mp3"),
-    ("./samples/hihat.mp3"),
-    ("./samples/kick.mp3"),
-    ("./samples/laugh-1.mp3"),
-    ("./samples/laugh-2.mp3"),
-    ("./samples/snare.mp3")
+    ("samples/DrumPad/A.mp3"),
+    ("samples/DrumPad/C.mp3"),
+    ("samples/DrumPad/F.mp3"),
+    ("samples/DrumPad/G.mp3"),
+    ("samples/DrumPad/hihat.mp3"),
+    ("samples/DrumPad/kick.mp3"),
+    ("samples/DrumPad/laugh-1.mp3"),
+    ("samples/DrumPad/laugh-2.mp3"),
+    ("samples/DrumPad/snare.mp3")
 ];
-var beat = [Samples[4], Samples[5], Samples[8]];
+var beat = [Samples[5], Samples[8], Samples[4]];
 var zaehler = 0;
 window.addEventListener("load", addClickListenersDrumPad);
 function playSample(sound) {
     var ton = new Audio(sound);
     ton.play();
+    console.log("test");
 }
 function playBeat() {
     setInterval(function () {
@@ -37,4 +38,4 @@ function addClickListenersDrumPad() {
     document.querySelector(".taste-9").addEventListener("click", function () { playSample(Samples[8]); });
     document.querySelector(".playbutton").addEventListener("click", function () { playBeat(); });
 }
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=main.js.map

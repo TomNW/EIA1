@@ -1,15 +1,17 @@
 var Samples: string [] = [
-    ("Aufgabe8/samples/DrumPad/A.mp3"), 
-    ("./samples/C.mp3"), 
-    ("./samples/F.mp3"), 
-    ("./samples/G.mp3"),
-    ("./samples/hihat.mp3"), 
-    ("./samples/kick.mp3"), 
-    ("./samples/laugh-1.mp3"), 
-    ("./samples/laugh-2.mp3"), 
-    ("./samples/snare.mp3")];
+    ("samples/DrumPad/A.mp3"), 
+    ("samples/DrumPad/C.mp3"), 
+    ("samples/DrumPad/F.mp3"), 
+    ("samples/DrumPad/G.mp3"),
+    ("samples/DrumPad/hihat.mp3"), 
+    ("samples/DrumPad/kick.mp3"), 
+    ("samples/DrumPad/laugh-1.mp3"), 
+    ("samples/DrumPad/laugh-2.mp3"), 
+    ("samples/DrumPad/snare.mp3")
 
-var beat: string []= [Samples [4], Samples [5], Samples [8]];
+];
+
+var beat: string []= [Samples [5], Samples [8], Samples [4]];
 
 var zaehler: number = 0;
 
@@ -18,6 +20,7 @@ window.addEventListener("load", addClickListenersDrumPad);
 function playSample(sound: string): void {
     var ton: HTMLAudioElement = new Audio(sound);
     ton.play();
+    console.log("test")
 }
 
 function playBeat(): void {
