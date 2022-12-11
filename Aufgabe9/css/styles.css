@@ -78,3 +78,38 @@ html, body {
    
      transform: scale(0.9);
    }
+
+   #stop:hover{
+
+    transform: scale(1.04);
+  }
+
+  #stop:active{
+
+    transform: scale(0.9);
+  
+  }
+
+  #remix:hover{
+
+ transform: scale(1.04);
+  }
+
+  #remix:active{
+
+    transform: scale(0.9);
+  }
+
+
+
+
+  #Buttons{
+   color: #fff;
+   width: 600px;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: auto;
+   text-align: center;
+   font-size: 120px;
+
+  }

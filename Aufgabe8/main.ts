@@ -30,7 +30,7 @@ function playBeat(): void {
         if (zaehler === 3) {
             zaehler = 0;
         }
-    }, 500);
+    }, 500); 
 }
 
 function addClickListenersDrumPad(): void {
