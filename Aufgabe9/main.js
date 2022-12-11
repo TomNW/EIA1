@@ -13,16 +13,11 @@ var beat = [Samples[4], Samples[5], Samples[8]];
 var zaehler = 0;
 var beatremix;
 var interval;
-//Funktionen// 
 window.addEventListener("load", addClickListenersDrumPad);
-//Zentrale Funktions //
-// tslint:disable-next-line: typedef
 function playSample(soundQuelle) {
-    // tslint:disable-next-line: typedef
     var sound = new Audio(soundQuelle);
     sound.play();
 }
-//Funktion Remix//
 function REMIX() {
     document.querySelector("#remix").addEventListener("click", function () {
         beatremix = setInterval(function () {
@@ -31,24 +26,21 @@ function REMIX() {
         }, 500);
     });
 }
-//Funktion Play-Button//
 function myBeat() {
     playSample(beat[zaehler]);
     zaehler += 1;
     if (zaehler > (beat.length - 1))
         zaehler = 0;
 }
-function PlayBeat() {
-    //Ton soll abgespielt werden//
-    if (document.getElementById("play").classList.contains("fa-play")) {
-        document.getElementById("play").classList.remove("fa-play");
-        document.getElementById("play").classList.add("fa-stop");
+function StartBeat() {
+    if (document.getElementById("playbutton").classList.contains("fa-play")) {
+        document.getElementById("playbutton").classList.remove("fa-play");
+        document.getElementById("playbutton").classList.add("fa-pause");
         interval = setInterval(myBeat, 350);
-        //Stopfunktion des Play Buttons, wwird zum Stop//
     }
     else {
-        document.getElementById("play").classList.remove("fa-stop");
-        document.getElementById("play").classList.add("fa-play");
+        document.getElementById("playbutton").classList.remove("fa-pause");
+        document.getElementById("playbutton").classList.add("fa-play");
         clearInterval(interval);
     }
 }
@@ -62,8 +54,7 @@ function addClickListenersDrumPad() {
     document.querySelector(".taste-7").addEventListener("click", function () { playSample(Samples[6]); });
     document.querySelector(".taste-8").addEventListener("click", function () { playSample(Samples[7]); });
     document.querySelector(".taste-9").addEventListener("click", function () { playSample(Samples[8]); });
-    document.querySelector("#play").addEventListener("click", PlayBeat);
+    document.querySelector("#playbutton").addEventListener("click", StartBeat);
     document.querySelector("#remix").addEventListener("click", function () { REMIX(); });
 }
-Samples;
 //# sourceMappingURL=main.js.map

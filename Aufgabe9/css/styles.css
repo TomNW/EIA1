@@ -58,7 +58,16 @@ html, body {
      filter: brightness(1.6 );
    }
    
-   
+   #Buttons{
+    color: #688fda;
+    width: 300px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px;
+    text-align: center;
+    font-size: 120px;
+ 
+   }
    
    .playbutton{
    
@@ -69,47 +78,64 @@ html, body {
     }
    
    .playbutton:hover{
-   
+    text-shadow: 1px 1px #ffffff;
      transform: scale(1.1);
      filter: grayscale(0.1);
    }
    
-   .playbutton:active{
-   
+   #playbutton:active{
+    text-shadow: 1px 1px #ffffff;
      transform: scale(0.9);
+
    }
 
    #stop:hover{
-
+    text-shadow: 1px 1px #ffffff;
     transform: scale(1.04);
   }
 
   #stop:active{
-
+    text-shadow: 1px 1px #ffffff;
     transform: scale(0.9);
   
   }
 
   #remix:hover{
-
+    text-shadow: 1px 1px #ffffff;
  transform: scale(1.04);
   }
 
   #remix:active{
-
+    text-shadow: 1px 1px #ffffff;
     transform: scale(0.9);
+    
   }
 
+  #record:hover{
+    text-shadow: 1px 1px #ffffff;
+    transform: scale(1.04);
+     }
+   
+     #record:active{
+      text-shadow: 1px 1px #ffffff;
+       transform: scale(0.9);
+     }
+   
+
+     #delete:hover{
+      text-shadow: 1px 1px #ffffff;
+      transform: scale(1.04);
+       }
+     
+       #delete:active{
+        text-shadow: 1px 1px #ffffff;
+         transform: scale(0.9);
+       }
+     
 
 
 
-  #Buttons{
-   color: #fff;
-   width: 600px;
-   align-items: center;
-   flex-wrap: wrap;
-   margin: auto;
-   text-align: center;
-   font-size: 120px;
 
-  }
+
+
+
