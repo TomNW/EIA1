@@ -16,7 +16,7 @@ var beat: string [] = [Samples[4], Samples[5], Samples[8]];
 var zaehler: number = 0;
 var beatremix: number;
 var interval: number ;
-
+var record = document.getElementById("record")
 
 
  
@@ -67,7 +67,6 @@ function StartBeat(): void {
   }
   
 }
-
 
       
   

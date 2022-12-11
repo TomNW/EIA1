@@ -13,6 +13,7 @@ var beat = [Samples[4], Samples[5], Samples[8]];
 var zaehler = 0;
 var beatremix;
 var interval;
+var record = document.getElementById("record");
 window.addEventListener("load", addClickListenersDrumPad);
 function playSample(soundQuelle) {
     var sound = new Audio(soundQuelle);
