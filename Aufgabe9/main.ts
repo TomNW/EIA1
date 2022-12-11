@@ -18,6 +18,7 @@ var beatremix: number;
 var interval: number ;
 
 
+
  
 window.addEventListener("load", addClickListenersDrumPad);
 
