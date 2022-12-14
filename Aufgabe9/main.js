@@ -24,7 +24,7 @@ function REMIX() {
         beatremix = setInterval(function () {
             playSample(beat[zaehler]);
             zaehler = Math.floor(Math.random() * 9);
-        }, 500);
+        }, 200);
     });
 }
 function myBeat() {

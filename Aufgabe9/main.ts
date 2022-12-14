@@ -16,6 +16,7 @@ var beat: string [] = [Samples[4], Samples[5], Samples[8]];
 var zaehler: number = 0;
 var beatremix: number;
 var interval: number ;
+var interval2: number;
 var record = document.getElementById("record")
 
 
@@ -68,6 +69,18 @@ function StartBeat(): void {
   
 }
 
+function switchbuttonrmx(){
+    if (playbutton.style.visibility == "hidden")
+    {
+        playbutton.style.visibility = "hidden";
+        stopbutton.style.visibility = "visible";
+    }
+    else{
+        playbutton.style.visibility = "hidden";
+        stopbutton.style.visibility = "visible";
+    }
+
+}
       
   
 
@@ -83,6 +96,6 @@ function addClickListenersDrumPad(): void {
         document.querySelector(".taste-8").addEventListener("click", function(): void {playSample(Samples[7]); });
         document.querySelector(".taste-9").addEventListener("click", function(): void {playSample(Samples[8]); });
         document.querySelector("#playbutton").addEventListener("click", StartBeat);
-        document.querySelector("#remix").addEventListener("click", function (): void {REMIX(); });
-    
+        document.querySelector("#delete").addEventListener("click", function(): void {beat[]});
+       
 }
