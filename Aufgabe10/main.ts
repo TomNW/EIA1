@@ -1,11 +1,12 @@
 window.addEventListener("load", function(): void {
     let enter: HTMLInputElement = (document.getElementById("inputText") as HTMLInputElement);
     let zahl: number = 0;
-
+    
     enter.addEventListener("keypress", function (event: KeyboardEvent): void {
         if (event.key === "Enter") {
             neueAufgabe();
             event.preventDefault();
+           
     }
 });
 
