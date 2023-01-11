@@ -1,7 +1,16 @@
 
-let ToDo: any = {
-    todosText:     ["Brot kaufen"],
-    todosChecked:   [true    , false   , false],
+
+interface toDo {
+
+    todosText: string[];
+    todosChecked: boolean[];
+
+}
+
+
+let ToDo: toDo = {
+    todosText:     "Brot kaufen",
+    todosChecked:   true,
 }
 
 var inputDOMElement: HTMLInputElement;
